@@ -1,0 +1,29 @@
+[project]
+name = "dino"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "addict>=2.4.0",
+    "cython>=3.0.11",
+    "ipykernel>=6.29.5",
+    "opencv-python>=4.10.0.84",
+    "panopticapi",
+    "pycocotools>=2.0.8",
+    "scipy>=1.14.1",
+    "setuptools>=70.0.0",
+    "submitit==1.5.2",
+    "termcolor>=2.5.0",
+    "timm>=1.0.12",
+    "torch==1.13.1+cu116",
+    "torchvision==0.14.1+cu116",
+    "yapf>=0.43.0",
+]
+
+[tool.uv]
+extra-index-url = ["https://download.pytorch.org/whl/cu116"]
+
+[tool.uv.sources]
+panopticapi = { git = "https://github.com/cocodataset/panopticapi.git" }
+setuptools = { git = "https://github.com/pypa/setuptools", rev = "v69.5.1" }
